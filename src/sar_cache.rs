@@ -77,8 +77,8 @@ where
                 match mk_fut(true).await {
                     Err(e) => {
                         warn!(
-                            subject="ars.cache",
-                            category="ars.cache",
+                            subject="sar.cache",
+                            category="sar.cache",
                             cached_name=?cached_name,
                             error=?e,
                             last_err=?arc.read().last_err,
@@ -94,8 +94,8 @@ where
                         lock.updated = Instant::now();
                         lock.last_err = None;
                         info!(
-                            subject="ars.cache",
-                            category="ars.cache",
+                            subject="sar.cache",
+                            category="sar.cache",
                             cached_name=?cached_name,
                             last_update_elapsed_secs=?lock.updated.elapsed().as_secs(),
                             "successful cache refresh"
