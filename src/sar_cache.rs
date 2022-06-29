@@ -9,7 +9,7 @@ use std::{fmt::Debug, future::Future, marker::Sync, sync::Arc};
 use tokio::time::{sleep, Duration, Instant};
 use tracing::{info, warn};
 
-/// Singleton Async Refresh Cache
+/// "Singleton Async Refresh Cache"
 pub struct SarCache<T, E> {
     inner: Arc<RwLock<SarCacheState<T, E>>>,
 }
