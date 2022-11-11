@@ -1,3 +1,3 @@
 # cache-rs
 
-A library of caches.
+A library of rusty caches.
